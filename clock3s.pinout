@@ -1,0 +1,8 @@
+
+
+clock = ck1;
+//ena =  led0;
+LOW = GND;
+
+
+ena =  led0;

@@ -16,8 +16,11 @@ wire [3:0] state_f;
 wire [3:0] repr_number;
 wire [6:0] number_buf;
 
+wire enable_3s;
+
+clock3s       clock_circuit(.clock(clock), .LOW(LOW), .ena(enable_3s));
 internalstate state_machine( .in(state_i), .out(state_f), .down(down));
-reg4          register(.ed(state_f), .eck(clock), .es(LOW), .er(LOW), .eena(HIGH), .sq(state_i));
+reg4          register(.ed(state_f), .eck(clock), .es(LOW), .er(LOW), .eena(enable_3s), .sq(state_i));
 statenumber   out_number(.in(state_i), .number(repr_number));
 numberdigit   output_view(.number(repr_number), .digit(number_buf));
 
