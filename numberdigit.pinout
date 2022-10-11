@@ -1,0 +1,14 @@
+
+
+number[0]   = sw0;
+number[1]   = sw1;
+number[2]   = sw2;
+number[3]   = sw3;
+
+digit[6] = segd0.g_on;
+digit[5] = segd0.f_on;
+digit[4] = segd0.e_on;
+digit[3] = segd0.d_on;
+digit[2] = segd0.c_on;
+digit[1] = segd0.b_on;
+digit[0] = segd0.a_on;
