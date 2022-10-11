@@ -1,0 +1,13 @@
+
+
+down    = sw9;
+
+in[0]   = sw0;
+in[1]   = sw1;
+in[2]   = sw2;
+in[3]   = sw3;
+
+out[3] = segd0.d_on;
+out[2] = segd0.c_on;
+out[1] = segd0.b_on;
+out[0] = segd0.a_on;
